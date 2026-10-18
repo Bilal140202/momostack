@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features Deep Dive — MomoStack Offline-First Android Vault</title>
+  <meta name="description" content="Explore MomoStack's 6 core engineering pillars: Universal Share Sheet Capture, Link Intelligence, On-Device OCR, 1-Tap Notes, Focus Editor, and 13 Category Vaults.">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/branding/momo_master_icon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+  <div class="ambient-bg">
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-bottom"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/branding/momo_master_icon.svg" alt="MomoStack Icon">
+        <span>MomoStack</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Overview</a></li>
+          <li><a href="index.html" class="active">Features</a></li>
+          <li><a href="../privacy/index.html">Zero-Telemetry</a></li>
+          <li><a href="../docs/index.html">Documentation</a></li>
+          <li><a href="../about/index.html">About & Creator</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 18px; font-size: 0.85rem;">
+          GitHub
+        </a>
+        <a href="../download/index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+          Download v1.0
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 60px 0 100px;">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 70px;">
+        <div class="glass-pill accent" style="margin-bottom: 16px;">Comprehensive System Specifications</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em;" class="text-gradient">
+          Six Pillars of Offline Sovereignty.
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-top: 16px;">
+          Every module is optimized for zero-latency execution, on-device machine intelligence, and persistent local storage without vendor lock-in.
+        </p>
+      </div>
+
+      <!-- Feature Section 1 -->
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; margin-bottom: 120px;">
+        <div>
+          <div class="glass-pill" style="margin-bottom: 14px; background: rgba(99, 102, 241, 0.15); color: #A5B4FC;">Pillar 01</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px;">
+            Universal Link Ingestion & Intelligent Reels Feed
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Tap Share from any Android app—Chrome, Twitter/X, YouTube, Reddit, Instagram, or Substack—and send the URL straight to MomoStack. 
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Tracker Sanitizer:</strong> Strips invasive UTM parameters, <code>fbclid</code>, and affiliate hashes automatically before persisting.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Sub-100ms OpenGraph Parser:</strong> Extracts high-resolution preview graphics, article headlines, domain favicons, and word counts.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Full Offline Cache:</strong> Read metadata and access links even during airline flights or subway dead zones.</span>
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: center;">
+          <div class="hero-phone-wrap" style="max-width: 320px;">
+            <img src="../assets/screenshots/01_home_capture.png" alt="Home Link Feed">
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section 2 -->
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; margin-bottom: 120px;">
+        <div style="order: 2;">
+          <div class="glass-pill" style="margin-bottom: 14px; background: rgba(245, 158, 11, 0.15); color: #FCD34D;">Pillar 02</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px;">
+            Long-Press Link Intelligence & Offline PDF Archival
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Web pages vanish, paywalls rise, and domains expire. MomoStack gives you total permanence with deep contextual link operations.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>One-Touch Offline PDF Snapshot:</strong> Renders articles via headless WebKit directly into a searchable offline PDF document.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Deep Action Sheet:</strong> Fast copy, share stripped URL, reassign category folder, or delete in 1 tap.</span>
+            </li>
+          </ul>
+        </div>
+        <div style="order: 1; text-align: center;">
+          <div class="hero-phone-wrap" style="max-width: 320px;">
+            <img src="../assets/screenshots/02_link_detail.png" alt="Link Detail and PDF Action Sheet">
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section 3 -->
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; margin-bottom: 120px;">
+        <div>
+          <div class="glass-pill" style="margin-bottom: 14px; background: rgba(244, 63, 94, 0.15); color: #FDA4AF;">Pillar 03</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px;">
+            On-Device OCR & Screenshot Intelligence Vault
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Never let important screenshots get buried under thousands of camera photos. MomoStack isolates screenshots into a dedicated intelligence vault.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F43F5E" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>100% Local ML Kit Recognition:</strong> Transcribes receipts, tracking codes, terminal commands, and tweets right on your device silicon.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F43F5E" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Instant Text Extraction:</strong> Tap any transcribed line to copy code or passwords directly to clipboard.</span>
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: center;">
+          <div class="hero-phone-wrap" style="max-width: 320px;">
+            <img src="../assets/screenshots/03_screenshot_vault.png" alt="Screenshot OCR Vault">
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section 4 & 5: Notes & Editor -->
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; margin-bottom: 120px;">
+        <div style="order: 2;">
+          <div class="glass-pill" style="margin-bottom: 14px; background: rgba(16, 185, 129, 0.15); color: #6EE7B7;">Pillars 04 & 05</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px;">
+            Zero-Latency Notes & Full-Page Markdown Editor
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Notes shouldn't wait for spinning sync spinners. MomoStack delivers immediate keystroke response, 1-tap copy, and full markdown clarity.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>1-Tap Card Copy:</strong> Grab entire notes or snippet blocks from the list view without having to open the editor.</span>
+            </li>
+            <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Full-Screen Distraction-Free Writing:</strong> Clean dark canvas with auto-saving on every character insertion.</span>
+            </li>
+          </ul>
+        </div>
+        <div style="order: 1; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <div class="hero-phone-wrap" style="max-width: 250px;">
+            <img src="../assets/screenshots/04_notes_page.png" alt="Notes List View">
+          </div>
+          <div class="hero-phone-wrap" style="max-width: 250px;">
+            <img src="../assets/screenshots/05_note_editor.png" alt="Focus Editor">
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section 6: Category Vaults -->
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; margin-bottom: 100px;">
+        <div>
+          <div class="glass-pill" style="margin-bottom: 14px; background: rgba(6, 182, 212, 0.15); color: #67E8F9;">Pillar 06</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px;">
+            Smart 13 Categories Vault Organization
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Say goodbye to endless unorganized bookmarks. MomoStack features 13 dedicated topic vaults crafted specifically for developers, researchers, and creators.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px;">
+            <span class="glass-pill">AI & Machine Learning</span>
+            <span class="glass-pill">Web & Mobile Dev</span>
+            <span class="glass-pill">Cloud & DevOps</span>
+            <span class="glass-pill">Design & Typography</span>
+            <span class="glass-pill">Security & Crypto</span>
+            <span class="glass-pill">Science & Research</span>
+            <span class="glass-pill">Business & Finance</span>
+            <span class="glass-pill">Articles & Essays</span>
+            <span class="glass-pill">Tools & Utilities</span>
+            <span class="glass-pill">Video & Media</span>
+            <span class="glass-pill">Private Archives</span>
+            <span class="glass-pill">Personal Stash</span>
+            <span class="glass-pill">Quick Inbox</span>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <div class="hero-phone-wrap" style="max-width: 320px;">
+            <img src="../assets/screenshots/06_categories_vault.png" alt="Categories Vault">
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom CTA -->
+      <div style="text-align: center; padding: 60px 0;">
+        <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">Ready to experience true offline speed?</h3>
+        <a href="../download/index.html" class="btn-primary" style="font-size: 1.05rem; padding: 16px 36px;">
+          Download MomoStack v1.0 APK →
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <img src="../assets/branding/momo_master_icon.svg" alt="Momo Logo" style="width: 32px; height: 32px; border-radius: 8px;">
+          <span style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF;">MomoStack</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
+          Engineered with John Carmack first-principles simplicity by Bilal Ansari.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html">Feature Specs</a></li>
+          <li><a href="../download/index.html">Download v1.0</a></li>
+          <li><a href="../privacy/index.html">Privacy Guarantee</a></li>
+          <li><a href="../docs/index.html">User Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Architecture</h4>
+        <ul>
+          <li><a href="../docs/index.html#share-sheet">Share Sheet Ingestion</a></li>
+          <li><a href="../docs/index.html#ocr-engine">On-Device OCR</a></li>
+          <li><a href="../docs/index.html#offline-pdf">PDF Archival Driver</a></li>
+          <li><a href="../privacy/index.html#sqlite-sandbox">SQLite Security</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Creator & Legal</h4>
+        <ul>
+          <li><a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer">Bilal Ansari (Portfolio)</a></li>
+          <li><a href="../about/index.html">The Momo Story</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 MomoStack. Crafted with obsession by <a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: #A5B4FC;">Bilal Ansari</a>.
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="../privacy/index.html">Zero-Telemetry Policy</a>
+        <a href="https://github.com/Bilal140202/momostack">GitHub Source</a>
+        <a href="https://ansaribilal.com">ansaribilal.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero-Telemetry Security Manifest — MomoStack</title>
+  <meta name="description" content="Technical audit of MomoStack's zero-cloud architecture. Zero analytics SDKs, local SQLite encryption, stripped URL trackers, and strict Android sandbox isolation.">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/branding/momo_master_icon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+  <div class="ambient-bg">
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-bottom"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/branding/momo_master_icon.svg" alt="MomoStack Icon">
+        <span>MomoStack</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Overview</a></li>
+          <li><a href="../features/index.html">Features</a></li>
+          <li><a href="index.html" class="active">Zero-Telemetry</a></li>
+          <li><a href="../docs/index.html">Documentation</a></li>
+          <li><a href="../about/index.html">About & Creator</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 18px; font-size: 0.85rem;">
+          GitHub
+        </a>
+        <a href="../download/index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+          Download v1.0
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 60px 0 100px;">
+    <div class="container" style="max-width: 900px;">
+      
+      <!-- Page Header -->
+      <div style="text-align: center; margin-bottom: 60px;">
+        <div class="glass-pill accent" style="margin-bottom: 16px;">Verified Architecture Manifest</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em;" class="text-gradient">
+          Zero Telemetry. Forever.
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.6; margin-top: 16px;">
+          Most note-taking and bookmarking apps build behavioral profiles from your reading habits. MomoStack doesn't even own a server to send your data to.
+        </p>
+      </div>
+
+      <!-- Core Principle Card -->
+      <div class="glass-panel" style="padding: 36px; margin-bottom: 48px; border-color: rgba(99, 102, 241, 0.4);">
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div style="padding: 14px; background: rgba(99, 102, 241, 0.15); border-radius: 14px; color: #818CF8; flex-shrink: 0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 8px;">The Carmack First-Principles Rule of Local Software</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+              "If an application does not require a remote server to execute its fundamental promise, maintaining a remote server is an architectural defect, an unnecessary cost center, and an existential privacy risk to the user."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Telemetry Audit -->
+      <section style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.01em;">1. Telemetry & Tracker Elimination</h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            MomoStack is compiled with zero analytical dependencies. You can inspect the source code, examine network traffic via Wireshark/Charles Proxy, or decompile the release APK:
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+              <span style="color: #EF4444; font-weight: 700; font-size: 1.1rem;">✕</span>
+              <span><strong>No Google Firebase Analytics:</strong> Zero user tracking, event logging, or app session profiling.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+              <span style="color: #EF4444; font-weight: 700; font-size: 1.1rem;">✕</span>
+              <span><strong>No Mixpanel / Amplitude / Segment:</strong> Zero telemetry beacons or user journey funnels.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+              <span style="color: #EF4444; font-weight: 700; font-size: 1.1rem;">✕</span>
+              <span><strong>No Third-Party Advertising SDKs:</strong> 100% ad-free forever.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; font-size: 0.95rem;">
+              <span style="color: #EF4444; font-weight: 700; font-size: 1.1rem;">✕</span>
+              <span><strong>No Remote User Account System:</strong> No passwords, no auth tokens, no database leaks.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section: SQLite Security Sandbox -->
+      <section id="sqlite-sandbox" style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.01em;">2. Local SQLite Sandbox Storage</h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            Every single saved bookmark, extracted OCR text block, category structure, and private note is persisted in Android's isolated app container:
+          </p>
+          <div class="code-box" style="margin-bottom: 20px;">
+            <code>/data/data/org.momo.linkvault/databases/momo_vault.db</code>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            This directory is sandboxed via Linux kernel user IDs (UIDs). Other Android apps cannot read, inspect, or modify your database without root privileges.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Permissions Audit -->
+      <section style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.01em;">3. Android Permissions Transparency</h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--border-glass); text-align: left;">
+                <th style="padding: 12px 0; color: var(--text-dim);">Permission</th>
+                <th style="padding: 12px 0; color: var(--text-dim);">Strict Scope & Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-glass);">
+                <td style="padding: 14px 0; font-family: var(--font-mono); color: #818CF8;">android.permission.INTERNET</td>
+                <td style="padding: 14px 0; color: var(--text-muted);">
+                  Used <strong>only</strong> when you save a URL or initiate offline PDF archival to download the targeted webpage and its OpenGraph metadata. Never sends outbound telemetry.
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-glass);">
+                <td style="padding: 14px 0; font-family: var(--font-mono); color: #818CF8;">android.permission.READ_MEDIA_IMAGES</td>
+                <td style="padding: 14px 0; color: var(--text-muted);">
+                  Allows the user to select screenshots from their gallery for on-device OCR transcription. MomoStack never accesses photos without explicit user selection.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 14px 0; font-family: var(--font-mono); color: #EF4444;">Contacts, Mic, Location, Camera</td>
+                <td style="padding: 14px 0; color: #EF4444; font-weight: 600;">
+                  NEVER requested. Zero access.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: URL Stripper -->
+      <section style="margin-bottom: 60px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.01em;">4. Built-In Surveillance Parameter Stripper</h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 16px;">
+            When you share a link from Instagram or Twitter, it usually carries invasive tracking tokens:
+          </p>
+          <div class="code-box" style="margin-bottom: 16px;">
+            <code style="color: #EF4444;">https://example.com/article?utm_source=twitter&utm_medium=social&fbclid=IwAR2...</code>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 16px;">
+            MomoStack's URL Engine strips all known advertising tracking queries before persistence:
+          </p>
+          <div class="code-box">
+            <code style="color: #10B981;">https://example.com/article</code>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <div style="text-align: center; margin-top: 60px;">
+        <a href="../download/index.html" class="btn-primary" style="padding: 16px 36px; font-size: 1.05rem;">
+          Download MomoStack v1.0 Free →
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <img src="../assets/branding/momo_master_icon.svg" alt="Momo Logo" style="width: 32px; height: 32px; border-radius: 8px;">
+          <span style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF;">MomoStack</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
+          Engineered with John Carmack first-principles simplicity by Bilal Ansari.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../features/index.html">Feature Specs</a></li>
+          <li><a href="../download/index.html">Download v1.0</a></li>
+          <li><a href="index.html">Privacy Guarantee</a></li>
+          <li><a href="../docs/index.html">User Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Architecture</h4>
+        <ul>
+          <li><a href="../docs/index.html#share-sheet">Share Sheet Ingestion</a></li>
+          <li><a href="../docs/index.html#ocr-engine">On-Device OCR</a></li>
+          <li><a href="../docs/index.html#offline-pdf">PDF Archival Driver</a></li>
+          <li><a href="#sqlite-sandbox">SQLite Security</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Creator & Legal</h4>
+        <ul>
+          <li><a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer">Bilal Ansari (Portfolio)</a></li>
+          <li><a href="../about/index.html">The Momo Story</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 MomoStack. Crafted with obsession by <a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: #A5B4FC;">Bilal Ansari</a>.
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="index.html">Zero-Telemetry Policy</a>
+        <a href="https://github.com/Bilal140202/momostack">GitHub Source</a>
+        <a href="https://ansaribilal.com">ansaribilal.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

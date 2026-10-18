@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation & User Manual — MomoStack</title>
+  <meta name="description" content="Official documentation for MomoStack. Master Android Share Sheet capture, on-device OCR transcription, offline PDF archiving, and private note taking.">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/branding/momo_master_icon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+  <div class="ambient-bg">
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-bottom"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-brand">
+        <img src="../assets/branding/momo_master_icon.svg" alt="MomoStack Icon">
+        <span>MomoStack</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Overview</a></li>
+          <li><a href="../features/index.html">Features</a></li>
+          <li><a href="../privacy/index.html">Zero-Telemetry</a></li>
+          <li><a href="index.html" class="active">Documentation</a></li>
+          <li><a href="../about/index.html">About & Creator</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 18px; font-size: 0.85rem;">
+          GitHub
+        </a>
+        <a href="../download/index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+          Download v1.0
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 60px 0 100px;">
+    <div class="container" style="max-width: 960px;">
+      
+      <!-- Page Header -->
+      <div style="text-align: center; margin-bottom: 60px;">
+        <div class="glass-pill accent" style="margin-bottom: 16px;">Operational Manual</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em;" class="text-gradient">
+          MomoStack Documentation.
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.6; margin-top: 16px;">
+          Learn how to get the most out of your offline vault with step-by-step guides, workflows, and technical details.
+        </p>
+      </div>
+
+      <!-- Quick Nav Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 60px;">
+        <a href="#quickstart" class="glass-panel" style="padding: 20px; text-decoration: none; display: block;">
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 6px;">1. Quickstart</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Installation & setup</p>
+        </a>
+        <a href="#share-sheet" class="glass-panel" style="padding: 20px; text-decoration: none; display: block;">
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 6px;">2. Share Sheet</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">1-tap capture workflow</p>
+        </a>
+        <a href="#ocr-engine" class="glass-panel" style="padding: 20px; text-decoration: none; display: block;">
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 6px;">3. On-Device OCR</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Extract text from images</p>
+        </a>
+        <a href="#offline-pdf" class="glass-panel" style="padding: 20px; text-decoration: none; display: block;">
+          <h4 style="color: #FFFFFF; font-size: 1rem; margin-bottom: 6px;">4. PDF Archival</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Headless PDF snapshots</p>
+        </a>
+      </div>
+
+      <!-- Doc Section 1: Quickstart -->
+      <section id="quickstart" style="margin-bottom: 70px;">
+        <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">
+          1. Quickstart & Installation
+        </h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            MomoStack is distributed as an independent APK package. No Google Play account or Google Play Services framework is strictly mandatory.
+          </p>
+          <ol style="color: var(--text-main); font-size: 0.95rem; display: flex; flex-direction: column; gap: 14px; padding-left: 20px; margin-bottom: 24px;">
+            <li>Download the official signed release from the <a href="../download/index.html" style="color: #818CF8;">Download Hub</a>.</li>
+            <li>Tap the APK notification on your Android device to install. If prompted, toggle "Allow from this source" in system settings.</li>
+            <li>Verify the SHA-256 checksum to guarantee file authenticity.</li>
+            <li>Launch MomoStack. You'll be greeted by Momo with zero mandatory account forms.</li>
+          </ol>
+          <div class="code-box">
+            <span style="color: var(--text-dim); font-size: 0.8rem;">ADB Installation Command:</span>
+            <code>adb install -r momostack-v1.0.0.apk</code>
+            <button class="copy-btn" data-copy="adb install -r momostack-v1.0.0.apk">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doc Section 2: Share Sheet Ingestion -->
+      <section id="share-sheet" style="margin-bottom: 70px;">
+        <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">
+          2. Android Share Sheet Ingestion Workflow
+        </h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            MomoStack registers an intent filter for <code>android.intent.action.SEND</code> with MIME type <code>text/plain</code>.
+          </p>
+          <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 20px; margin-bottom: 24px;">
+            <h4 style="color: #A5B4FC; font-size: 1rem; margin-bottom: 8px;">How to Capture in Under 1 Second:</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+              When viewing any article in Chrome or watching a video on YouTube, tap <strong>Share → MomoStack</strong>. A subtle confirmation pill confirms capture, and the app instantly parses the title, description, and high-res thumbnail in the background.
+            </p>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            <strong>Pro Tip:</strong> Pin MomoStack to your Android Share Sheet favorites so it appears as the first choice next to messaging apps.
+          </p>
+        </div>
+      </section>
+
+      <!-- Doc Section 3: On-Device OCR Engine -->
+      <section id="ocr-engine" style="margin-bottom: 70px;">
+        <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">
+          3. On-Device OCR Recognition & Transcription
+        </h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            The OCR module uses on-device Google ML Kit models to extract text from images without network calls:
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 12px; color: var(--text-main);">
+              <span style="color: #F43F5E; font-weight: 700;">•</span>
+              <span><strong>Screenshots Tab:</strong> Switch to the Screenshots tab in MomoStack.</span>
+            </li>
+            <li style="display: flex; gap: 12px; color: var(--text-main);">
+              <span style="color: #F43F5E; font-weight: 700;">•</span>
+              <span><strong>Import Image:</strong> Tap "+" to select a screenshot from your device gallery.</span>
+            </li>
+            <li style="display: flex; gap: 12px; color: var(--text-main);">
+              <span style="color: #F43F5E; font-weight: 700;">•</span>
+              <span><strong>Automatic Indexing:</strong> The image is parsed in under 200ms and added to the searchable index.</span>
+            </li>
+            <li style="display: flex; gap: 12px; color: var(--text-main);">
+              <span style="color: #F43F5E; font-weight: 700;">•</span>
+              <span><strong>Searchable:</strong> Any text inside that image—error codes, Wi-Fi passwords, addresses—is now instantly findable via the search bar.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Doc Section 4: Offline PDF Archival -->
+      <section id="offline-pdf" style="margin-bottom: 70px;">
+        <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">
+          4. Offline Web Archival & PDF Snapshots
+        </h2>
+        <div class="glass-panel" style="padding: 32px;">
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            Articles on the web frequently get moved or deleted. MomoStack includes an on-demand PDF snapshot engine:
+          </p>
+          <ol style="color: var(--text-main); font-size: 0.95rem; display: flex; flex-direction: column; gap: 12px; padding-left: 20px; margin-bottom: 24px;">
+            <li>Long-press on any link card in your feed.</li>
+            <li>Select <strong>"Archive as Offline PDF"</strong> from the bottom action sheet.</li>
+            <li>MomoStack loads the clean article view into Android's native print rasterizer and outputs a standardized PDF file stored in your private local directory.</li>
+            <li>You can now read this full article anytime without internet access.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Troubleshooting FAQ -->
+      <section style="margin-bottom: 70px;">
+        <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 20px;" class="text-gradient">
+          5. Frequently Asked Questions
+        </h2>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="glass-panel" style="padding: 24px;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">Will my data sync across multiple phones?</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+              By design, MomoStack v1.0 is 100% offline-first and contains no third-party cloud sync servers. You can export your SQLite vault file directly and restore it onto any other Android device.
+            </p>
+          </div>
+          <div class="glass-panel" style="padding: 24px;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">Does MomoStack drain battery in the background?</h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+              No. MomoStack does not run persistent background socket connections, location polls, or heartbeat timers. Metadata parsing runs in short-lived Android <code>WorkManager</code> tasks that sleep as soon as resolution finishes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <img src="../assets/branding/momo_master_icon.svg" alt="Momo Logo" style="width: 32px; height: 32px; border-radius: 8px;">
+          <span style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF;">MomoStack</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
+          Engineered with John Carmack first-principles simplicity by Bilal Ansari.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="../features/index.html">Feature Specs</a></li>
+          <li><a href="../download/index.html">Download v1.0</a></li>
+          <li><a href="../privacy/index.html">Privacy Guarantee</a></li>
+          <li><a href="index.html">User Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Architecture</h4>
+        <ul>
+          <li><a href="#share-sheet">Share Sheet Ingestion</a></li>
+          <li><a href="#ocr-engine">On-Device OCR</a></li>
+          <li><a href="#offline-pdf">PDF Archival Driver</a></li>
+          <li><a href="../privacy/index.html#sqlite-sandbox">SQLite Security</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Creator & Legal</h4>
+        <ul>
+          <li><a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer">Bilal Ansari (Portfolio)</a></li>
+          <li><a href="../about/index.html">The Momo Story</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          <li><a href="https://github.com/Bilal140202/momostack/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 MomoStack. Crafted with obsession by <a href="https://ansaribilal.com" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: #A5B4FC;">Bilal Ansari</a>.
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="../privacy/index.html">Zero-Telemetry Policy</a>
+        <a href="https://github.com/Bilal140202/momostack">GitHub Source</a>
+        <a href="https://ansaribilal.com">ansaribilal.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

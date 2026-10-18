@@ -1,0 +1,90 @@
+<svg viewBox="0 0 512 512" width="512" height="512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="charHpBand" x1="100" y1="80" x2="412" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="charBody" x1="160" y1="140" x2="360" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#FFF5F5"/>
+      <stop offset="100%" stop-color="#FED7AA"/>
+    </linearGradient>
+    <linearGradient id="charHpCushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="charEarInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+    <filter id="charShadow" x="50" y="60" width="412" height="412" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Headphone Band -->
+  <path d="M 120 270 C 110 130, 402 130, 392 270" stroke="url(#charHpBand)" stroke-width="26" stroke-linecap="round" fill="none"/>
+  <path d="M 135 250 C 130 155, 382 155, 377 250" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Body & Ears -->
+  <g filter="url(#charShadow)">
+    <ellipse cx="170" cy="155" rx="36" ry="52" transform="rotate(-20 170 155)" fill="#FFFFFF"/>
+    <ellipse cx="170" cy="155" rx="22" ry="36" transform="rotate(-20 170 155)" fill="url(#charEarInner)"/>
+    <ellipse cx="342" cy="155" rx="36" ry="52" transform="rotate(20 342 155)" fill="#FFFFFF"/>
+    <ellipse cx="342" cy="155" rx="22" ry="36" transform="rotate(20 342 155)" fill="url(#charEarInner)"/>
+    <path d="M 256 145 C 366 145, 400 210, 400 298 C 400 390, 350 412, 256 412 C 162 412, 112 390, 112 298 C 112 210, 146 145, 256 145 Z" fill="url(#charBody)" stroke="#FFE4E6" stroke-width="2"/>
+  </g>
+
+  <!-- Left Cushion -->
+  <rect x="88" y="240" width="46" height="84" rx="23" fill="url(#charHpCushion)"/>
+  <rect x="100" y="250" width="22" height="64" rx="11" fill="#FFFFFF" fill-opacity="0.35"/>
+  <circle cx="111" cy="282" r="6" fill="#FFFFFF"/>
+
+  <!-- Right Cushion -->
+  <rect x="378" y="240" width="46" height="84" rx="23" fill="url(#charHpCushion)"/>
+  <rect x="390" y="250" width="22" height="64" rx="11" fill="#FFFFFF" fill-opacity="0.35"/>
+  <circle cx="401" cy="282" r="6" fill="#FFFFFF"/>
+
+  <!-- Horizontal Oval Pink Blushes -->
+  <ellipse cx="150" cy="316" rx="17" ry="9" transform="rotate(-5 150 316)" fill="#FB7185" opacity="0.95"/>
+  <ellipse cx="362" cy="316" rx="17" ry="9" transform="rotate(5 362 316)" fill="#FB7185" opacity="0.95"/>
+
+  <!-- LEFT PLUSH EYE (Symmetrical Sassy Eyebrow & Full Plush Pupil) -->
+  <g>
+    <!-- Left Sassy Eyebrow with Flirty Wing Tip -->
+    <path d="M 174 234 Q 204 214, 234 234" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <path d="M 176 234 L 166 226" stroke="#18181B" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Left Upper Lash Contour -->
+    <path d="M 184 254 Q 204 246, 224 254" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 186 251 L 178 246" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Full Anime Plush Pupil & Dual Sparkle Highlights -->
+    <ellipse cx="204" cy="268" rx="19" ry="26" fill="#18181B"/>
+    <ellipse cx="212" cy="256" rx="8" ry="11" fill="#FFFFFF"/>
+    <circle cx="198" cy="280" r="4.5" fill="#FFFFFF"/>
+    <circle cx="217" cy="278" r="2.5" fill="#FFFFFF" fill-opacity="0.8"/>
+  </g>
+
+  <!-- RIGHT PLUSH EYE (Exact Symmetrical Mirror Eyebrow & Full Plush Pupil) -->
+  <g>
+    <!-- Right Sassy Eyebrow (Exact Symmetrical Mirror y=214) -->
+    <path d="M 338 234 Q 308 214, 278 234" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <path d="M 336 234 L 346 226" stroke="#18181B" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Right Upper Lash Contour -->
+    <path d="M 328 254 Q 308 246, 288 254" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 326 251 L 334 246" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Full Anime Plush Pupil & Dual Sparkle Highlights -->
+    <ellipse cx="308" cy="268" rx="19" ry="26" fill="#18181B"/>
+    <ellipse cx="316" cy="256" rx="8" ry="11" fill="#FFFFFF"/>
+    <circle cx="302" cy="280" r="4.5" fill="#FFFFFF"/>
+    <circle cx="321" cy="278" r="2.5" fill="#FFFFFF" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Cute Cat Mouth (:3 / ω) -->
+  <path d="M 242 305 Q 249 316, 256 307 Q 263 316, 270 305" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Equalizer Header Waves on Headphone -->
+  <rect x="368" y="112" width="6" height="22" rx="3" fill="#FF6B8B"/>
+  <rect x="380" y="98" width="6" height="38" rx="3" fill="#FF8E53"/>
+  <rect x="392" y="106" width="6" height="28" rx="3" fill="#FFAE33"/>
+</svg>
