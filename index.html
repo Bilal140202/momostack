@@ -7,32 +7,32 @@
   <meta name="description" content="Capture links, transcribe screenshots with on-device OCR, archive articles as offline PDFs, and write private notes with zero cloud dependencies. 100% offline SQLite.">
   <meta name="keywords" content="MomoStack, LinkVault, offline-first, Android, OCR vault, bookmark manager, offline PDF, private notes, Bilal Ansari">
   
-  <!-- Open Graph / Social Cards -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="MomoStack — Offline-First Vault for Android">
   <meta property="og:description" content="Save anything for later with zero telemetry. High-performance on-device OCR, offline link archival, and encrypted local notes.">
   <meta property="og:image" content="assets/video/poster.jpg">
   
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/branding/momo_master_icon.svg">
   
   <!-- Lenis CSS & Script -->
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
   <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
   
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-  <!-- Ambient Light Mesh Atmosphere -->
+  <!-- Kinetic Atmosphere: Floating Gradient Blobs, Grid & Film Grain -->
   <div class="ambient-bg">
     <div class="ambient-grid"></div>
-    <div class="ambient-glow-top"></div>
-    <div class="ambient-glow-bottom"></div>
+    <div class="ambient-noise"></div>
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="ambient-blob-3"></div>
   </div>
 
-  <!-- Site Header -->
+  <!-- Glassmorphic Header -->
   <header class="site-header">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
@@ -68,65 +68,218 @@
 
   <!-- Hero Section -->
   <main>
-    <section style="padding: 80px 0 60px; text-align: center; position: relative;">
+    <section style="padding: 80px 0 40px; text-align: center; position: relative;">
       <div class="container">
         
-        <!-- Release Badge -->
+        <!-- Live Release Pill -->
         <div style="margin-bottom: 24px;">
           <div class="glass-pill accent live-pulse">
-            <span>MomoStack v1.0 Official Production Release</span>
-            <span style="opacity: 0.5;">·</span>
-            <span style="color: #F8FAFC;">100% Offline-First</span>
+            <span>MomoStack v1.0 Production Release</span>
+            <span style="opacity: 0.4;">|</span>
+            <span style="color: #FFFFFF;">Android 14/15 Native</span>
           </div>
         </div>
 
-        <!-- Master Headline -->
-        <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; max-width: 900px; margin: 0 auto 24px;" class="text-gradient">
-          Your Brain's Offline Vault.<br>
-          <span class="text-gradient-indigo">Captured in One Tap.</span>
+        <!-- Master Headline with Kinetic Radiant Shimmer -->
+        <h1 style="font-size: clamp(2.8rem, 6.5vw, 4.8rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.035em; max-width: 960px; margin: 0 auto 24px;">
+          <span class="text-shimmer">Your Brain's Offline Vault.</span><br>
+          <span class="text-gradient-indigo">Captured at Zero Latency.</span>
         </h1>
 
-        <!-- Subheadline -->
-        <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--text-muted); max-width: 680px; margin: 0 auto 40px; font-weight: 400; line-height: 1.6;">
-          Never lose another article, video, code snippet, or receipt. High-performance Android vault with on-device OCR, instant share-sheet capture, offline web archival, and zero cloud tracking.
+        <!-- Subtitle -->
+        <p style="font-size: clamp(1.1rem, 2.2vw, 1.3rem); color: var(--text-muted); max-width: 720px; margin: 0 auto 40px; font-weight: 400; line-height: 1.6;">
+          Never lose another article, video, receipt, or code snippet. Fast on-device OCR, instant share-sheet ingestion, offline PDF archival, and encrypted private notes with zero cloud dependencies.
         </p>
 
-        <!-- CTA Buttons -->
-        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 60px;">
-          <a href="download/index.html" class="btn-primary" style="font-size: 1.05rem; padding: 16px 36px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            Download MomoStack APK
+        <!-- Primary CTA Buttons -->
+        <div style="display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 50px;">
+          <a href="download/index.html" class="btn-primary" style="font-size: 1.05rem; padding: 18px 36px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download MomoStack APK (v1.0)
           </a>
-          <a href="#video-showcase" class="btn-secondary" style="font-size: 1.05rem; padding: 16px 28px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            Watch 30s Launch Video
+          <a href="#simulator" class="btn-secondary" style="font-size: 1.05rem; padding: 18px 30px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Try Live Interactive Simulator
           </a>
         </div>
 
-        <!-- Specs Micro-Strip -->
-        <div style="display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; font-size: 0.85rem; color: var(--text-dim); margin-bottom: 60px;">
-          <span>✓ Android 8.0+ Compatible</span>
-          <span>✓ Local SQLite Encrypted Sandbox</span>
-          <span>✓ Zero Remote Analytics</span>
-          <span>✓ Open Architecture</span>
+        <!-- Interactive Phone Showcase with Screen Switcher Tabs -->
+        <div class="phone-hub-wrap">
+          
+          <!-- Screen Tabs -->
+          <div class="phone-tabs-bar">
+            <button type="button" class="phone-tab-btn active" data-screen="feed">🔗 Universal Feed</button>
+            <button type="button" class="phone-tab-btn" data-screen="ocr">🔍 OCR Vault</button>
+            <button type="button" class="phone-tab-btn" data-screen="notes">📝 1-Tap Notes</button>
+            <button type="button" class="phone-tab-btn" data-screen="pdf">⚡ PDF Archival</button>
+            <button type="button" class="phone-tab-btn" data-screen="vaults">🗂️ 13 Vaults</button>
+          </div>
+
+          <!-- Phone Frame with 3D Gyro Tilt -->
+          <div style="position: relative; display: inline-block;">
+            
+            <!-- Floating Badge Left -->
+            <div class="floating-badge badge-left">
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(99, 102, 241, 0.2); display: flex; align-items: center; justify-content: center; color: #818CF8; font-weight: 700;">
+                ⚡
+              </div>
+              <div style="text-align: left;">
+                <strong style="display: block; color: #FFFFFF;">On-Device ML Kit</strong>
+                <span style="color: var(--text-dim); font-size: 0.75rem;">0ms Cloud Round-Trip</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Right -->
+            <div class="floating-badge badge-right">
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(16, 185, 129, 0.2); display: flex; align-items: center; justify-content: center; color: #10B981; font-weight: 700;">
+                🛡️
+              </div>
+              <div style="text-align: left;">
+                <strong style="display: block; color: #FFFFFF;">Local SQLite Sandbox</strong>
+                <span style="color: var(--text-dim); font-size: 0.75rem;">Zero Analytics Beacons</span>
+              </div>
+            </div>
+
+            <div class="phone-device-frame">
+              <div class="phone-device-inner">
+                <img id="heroPhoneScreen" src="assets/screenshots/01_home_capture.png" alt="MomoStack Android App Interactive Preview">
+              </div>
+            </div>
+
+          </div>
+
+          <p style="color: var(--text-dim); font-size: 0.825rem; margin-top: 18px;">
+            💡 <em>Hover to tilt in 3D · Tap tabs above to preview all screens live</em>
+          </p>
+
         </div>
 
-        <!-- Hero Device Mockup with Awwwards Perspective Frame -->
-        <div class="hero-phone-wrap">
-          <img src="assets/screenshots/01_home_capture.png" alt="MomoStack Universal Home Link Capture Screen on Android">
+      </div>
+    </section>
+
+    <!-- Infinite Scrolling Kinetic Marquee Ribbon -->
+    <section class="marquee-container" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">📱 Android Share Sheet</span>
+        <span class="marquee-item">🌐 Chrome Link Ingestion</span>
+        <span class="marquee-item">▶️ YouTube Video Bookmarks</span>
+        <span class="marquee-item">𝕏 Twitter / X Feeds</span>
+        <span class="marquee-item">👾 Reddit Threads</span>
+        <span class="marquee-item">📸 Instagram Reels</span>
+        <span class="marquee-item">📰 Substack Essays</span>
+        <span class="marquee-item">🔍 On-Device ML Kit OCR</span>
+        <span class="marquee-item">⚡ Headless PDF Archiving</span>
+        <span class="marquee-item">📝 1-Tap Notes Scratchpad</span>
+        <span class="marquee-item">🗂️ 13 Smart Topic Vaults</span>
+        <span class="marquee-item">🛡️ Local SQLite Sandbox</span>
+        <span class="marquee-item">🚫 Zero Tracking SDKs</span>
+        <!-- Duplicate for Seamless Infinite Loop -->
+        <span class="marquee-item">📱 Android Share Sheet</span>
+        <span class="marquee-item">🌐 Chrome Link Ingestion</span>
+        <span class="marquee-item">▶️ YouTube Video Bookmarks</span>
+        <span class="marquee-item">𝕏 Twitter / X Feeds</span>
+        <span class="marquee-item">👾 Reddit Threads</span>
+        <span class="marquee-item">📸 Instagram Reels</span>
+        <span class="marquee-item">📰 Substack Essays</span>
+        <span class="marquee-item">🔍 On-Device ML Kit OCR</span>
+        <span class="marquee-item">⚡ Headless PDF Archiving</span>
+        <span class="marquee-item">📝 1-Tap Notes Scratchpad</span>
+        <span class="marquee-item">🗂️ 13 Smart Topic Vaults</span>
+        <span class="marquee-item">🛡️ Local SQLite Sandbox</span>
+        <span class="marquee-item">🚫 Zero Tracking SDKs</span>
+      </div>
+    </section>
+
+    <!-- Animated High-Impact Counter Stats -->
+    <section style="padding: 20px 0;">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-item spotlight-card">
+            <div class="stat-number text-gradient-indigo" data-counter="0" data-suffix="ms">0ms</div>
+            <div class="stat-label">Cloud Round-Trip Latency</div>
+          </div>
+
+          <div class="stat-item spotlight-card">
+            <div class="stat-number text-gradient-coral" data-counter="100" data-suffix="%">100%</div>
+            <div class="stat-label">On-Device Silicon OCR</div>
+          </div>
+
+          <div class="stat-item spotlight-card">
+            <div class="stat-number" style="color: #FBBF24;" data-counter="13" data-suffix="">13</div>
+            <div class="stat-label">Pre-Structured Topic Vaults</div>
+          </div>
+
+          <div class="stat-item spotlight-card">
+            <div class="stat-number" style="color: #34D399;" data-counter="0" data-suffix="">0</div>
+            <div class="stat-label">Analytics SDKs or External Servers</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Link Sanitizer & Vault Simulator -->
+    <section id="simulator" style="padding: 80px 0;">
+      <div class="container" style="max-width: 860px;">
+        
+        <div class="simulator-card spotlight-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+            <div>
+              <div class="glass-pill accent" style="margin-bottom: 10px;">Live Interactive Sandbox</div>
+              <h3 style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em;">
+                Test the Ingestion & Sanitizer Engine
+              </h3>
+            </div>
+            <img src="assets/branding/momo_mascot_sassy.svg" alt="Momo Sassy" style="width: 52px; height: 52px;">
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Select a sample dirty URL with invasive ad trackers or paste your own to watch MomoStack sanitize parameters, resolve metadata, and stack it locally:
+          </p>
+
+          <!-- Sample Link Selector Pills -->
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+            <button type="button" class="glass-pill sim-sample-pill accent" data-sim="twitter" style="cursor: pointer;">
+              🐦 Twitter/X Link (+UTM Trackers)
+            </button>
+            <button type="button" class="glass-pill sim-sample-pill" data-sim="youtube" style="cursor: pointer;">
+              ▶️ YouTube Link (+Share Tokens)
+            </button>
+            <button type="button" class="glass-pill sim-sample-pill" data-sim="reddit" style="cursor: pointer;">
+              👾 Reddit Discussion Link
+            </button>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="simulator-input-wrap">
+            <input type="text" id="simInput" class="simulator-input" value="https://twitter.com/sama/status/178942?utm_source=feed&utm_medium=android&fbclid=IwAR29f..." placeholder="Enter any web URL...">
+            <button type="button" id="simRunBtn" class="btn-primary" style="padding: 10px 24px; font-size: 0.875rem;">
+              Sanitize & Stack
+            </button>
+          </div>
+
+          <!-- Progress Bar -->
+          <div id="simProgress" style="display: none; height: 4px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; margin-top: 20px;">
+            <div id="simProgressBar" style="height: 100%; width: 0%; background: linear-gradient(90deg, #4F46E5, #FF6B8B); transition: width 0.3s ease;"></div>
+          </div>
+
+          <!-- Output Preview Area -->
+          <div id="simResult" style="margin-top: 24px;"></div>
+
         </div>
 
       </div>
     </section>
 
     <!-- Bento Grid Features Section -->
-    <section style="padding: 100px 0; position: relative;">
+    <section style="padding: 60px 0 100px; position: relative;">
       <div class="container">
         
-        <div style="text-align: center; max-width: 640px; margin: 0 auto 50px;">
-          <div class="glass-pill accent" style="margin-bottom: 16px;">Core Capabilities</div>
-          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.02em;" class="text-gradient">
-            Engineered for High-Velocity Information Capture.
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 50px;">
+          <div class="glass-pill accent" style="margin-bottom: 16px;">Architectural Superiority</div>
+          <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em;" class="text-gradient">
+            Engineered for High-Velocity Capture.
           </h2>
           <p style="color: var(--text-muted); margin-top: 14px; font-size: 1.05rem;">
             No subscriptions. No account walls. Built with John Carmack first-principles simplicity to stay blisteringly fast forever.
@@ -139,13 +292,13 @@
           <div class="bento-item bento-span-8 spotlight-card">
             <div style="position: relative; z-index: 2;">
               <div class="glass-pill" style="margin-bottom: 16px; background: rgba(99, 102, 241, 0.15); color: #A5B4FC;">01 · Universal Link Intelligence</div>
-              <h3 style="font-size: 1.65rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;">Instant Android Share Sheet Ingestion</h3>
-              <p style="color: var(--text-muted); max-width: 500px; font-size: 0.95rem; line-height: 1.6;">
+              <h3 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.02em;">Instant Android Share Sheet Ingestion</h3>
+              <p style="color: var(--text-muted); max-width: 520px; font-size: 0.95rem; line-height: 1.6;">
                 Share any link from Chrome, YouTube, X, Reddit, or Instagram. MomoStack automatically resolves OpenGraph metadata, high-res posters, estimated read times, and tags in sub-100ms background workers.
               </p>
             </div>
             <div style="margin-top: 32px; display: flex; justify-content: center;">
-              <img src="assets/screenshots/01_home_capture.png" alt="MomoStack Universal Link Feed" style="max-height: 380px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="assets/screenshots/01_home_capture.png" alt="MomoStack Universal Link Feed" style="max-height: 400px; border-radius: 20px; box-shadow: 0 20px 45px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
             </div>
           </div>
 
@@ -153,13 +306,13 @@
           <div class="bento-item bento-span-4 spotlight-card">
             <div style="position: relative; z-index: 2;">
               <div class="glass-pill" style="margin-bottom: 16px; background: rgba(244, 63, 94, 0.15); color: #FDA4AF;">02 · On-Device OCR</div>
-              <h3 style="font-size: 1.45rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;">Screenshot Transcription</h3>
+              <h3 style="font-size: 1.55rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.02em;">Screenshot Intelligence</h3>
               <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
                 Every saved screenshot is indexed locally via ML Kit neural models. Search receipts, terminal logs, and slides instantly.
               </p>
             </div>
             <div style="margin-top: 28px; text-align: center;">
-              <img src="assets/screenshots/03_screenshot_vault.png" alt="Screenshot OCR Vault" style="max-height: 320px; border-radius: 18px; margin: 0 auto; box-shadow: 0 12px 30px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="assets/screenshots/03_screenshot_vault.png" alt="Screenshot OCR Vault" style="max-height: 340px; border-radius: 18px; margin: 0 auto; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
             </div>
           </div>
 
@@ -167,13 +320,13 @@
           <div class="bento-item bento-span-4 spotlight-card">
             <div style="position: relative; z-index: 2;">
               <div class="glass-pill" style="margin-bottom: 16px; background: rgba(16, 185, 129, 0.15); color: #6EE7B7;">03 · Scratchpad & Vault</div>
-              <h3 style="font-size: 1.45rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;">Instant 1-Tap Copy Notes</h3>
+              <h3 style="font-size: 1.55rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.02em;">Instant 1-Tap Copy Notes</h3>
               <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
                 Zero-friction notes list with instant clipboard access, full-screen distraction-free editor, and category tagging.
               </p>
             </div>
             <div style="margin-top: 28px; text-align: center;">
-              <img src="assets/screenshots/04_notes_page.png" alt="Private Notes Page" style="max-height: 320px; border-radius: 18px; margin: 0 auto; box-shadow: 0 12px 30px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="assets/screenshots/04_notes_page.png" alt="Private Notes Page" style="max-height: 340px; border-radius: 18px; margin: 0 auto; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
             </div>
           </div>
 
@@ -181,14 +334,14 @@
           <div class="bento-item bento-span-8 spotlight-card">
             <div style="position: relative; z-index: 2;">
               <div class="glass-pill" style="margin-bottom: 16px; background: rgba(245, 158, 11, 0.15); color: #FCD34D;">04 · Offline Permanence</div>
-              <h3 style="font-size: 1.65rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em;">Link Intelligence & Offline PDF Archival</h3>
+              <h3 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.02em;">Link Intelligence & Offline PDF Archival</h3>
               <p style="color: var(--text-muted); max-width: 520px; font-size: 0.95rem; line-height: 1.6;">
                 Long-press any saved card to trigger deep contextual actions: render the web page into an immutable offline PDF document, copy clean URLs with tracking stripped, or sort into 13 topic vaults.
               </p>
             </div>
             <div style="margin-top: 32px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-              <img src="assets/screenshots/02_link_detail.png" alt="Long-Press Action Sheet" style="max-height: 360px; border-radius: 18px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
-              <img src="assets/screenshots/06_categories_vault.png" alt="Smart 13 Categories Vault" style="max-height: 360px; border-radius: 18px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="assets/screenshots/02_link_detail.png" alt="Long-Press Action Sheet" style="max-height: 380px; border-radius: 18px; box-shadow: 0 20px 45px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="assets/screenshots/06_categories_vault.png" alt="Smart 13 Categories Vault" style="max-height: 380px; border-radius: 18px; box-shadow: 0 20px 45px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
             </div>
           </div>
 
@@ -203,8 +356,8 @@
       </div>
     </section>
 
-    <!-- Launch Video Ad Showcase -->
-    <section id="video-showcase" style="padding: 100px 0; background: rgba(12, 15, 23, 0.5); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+    <!-- High-Definition Launch Trailer -->
+    <section id="video-showcase" style="padding: 100px 0; background: rgba(8, 10, 18, 0.6); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
       <div class="container">
         
         <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
@@ -217,7 +370,7 @@
           </p>
         </div>
 
-        <div style="max-width: 840px; margin: 0 auto; position: relative; border-radius: 28px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 30px 80px -20px rgba(79, 70, 229, 0.35);">
+        <div style="max-width: 860px; margin: 0 auto; position: relative; border-radius: 30px; overflow: hidden; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 35px 90px -20px rgba(79, 70, 229, 0.4);">
           <video controls preload="metadata" poster="assets/video/poster.jpg" style="width: 100%; display: block; background: #000;">
             <source src="assets/video/momostack_launch_ad.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
@@ -230,20 +383,20 @@
     <!-- Interactive Momo Mascot Studio -->
     <section style="padding: 100px 0;">
       <div class="container">
-        <div class="glass-panel" style="padding: 60px 40px; max-width: 900px; margin: 0 auto;">
+        <div class="glass-panel spotlight-card" style="padding: 60px 40px; max-width: 900px; margin: 0 auto;">
           <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center;">
             
             <div style="text-align: center;">
               <div style="position: relative; display: inline-block;">
-                <div style="position: absolute; inset: -20px; background: radial-gradient(circle, rgba(255, 107, 139, 0.3) 0%, transparent 70%); filter: blur(30px); border-radius: 50%;"></div>
-                <img id="mascotPreviewImg" src="assets/branding/momo_mascot_character.svg" alt="Momo Mascot" style="position: relative; width: 220px; height: 220px; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5)); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div style="position: absolute; inset: -20px; background: radial-gradient(circle, rgba(255, 107, 139, 0.35) 0%, transparent 70%); filter: blur(30px); border-radius: 50%;"></div>
+                <img id="mascotPreviewImg" src="assets/branding/momo_mascot_character.svg" alt="Momo Mascot" style="position: relative; width: 230px; height: 230px; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5)); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);">
               </div>
             </div>
 
             <div>
               <div class="glass-pill" style="margin-bottom: 14px; background: rgba(255, 107, 139, 0.15); color: #FDA4AF;">Character Lineage</div>
               <h3 style="font-size: 1.85rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">
-                Meet Momo. Your Offline Vault Mascot.
+                Meet Momo. Your Offline Vault Companion.
               </h3>
               <p id="mascotMoodDesc" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;">
                 Porcelain dumpling body with plush pink-tinted ears, anime sparkle catchlights, and sweet warm smile. Momo safeguards your links locally without sending a single byte to remote servers.
@@ -264,7 +417,7 @@
       </div>
     </section>
 
-    <!-- Zero-Telemetry Architecture Comparison Table -->
+    <!-- Zero-Cloud Guarantee Comparison Table -->
     <section style="padding: 100px 0; border-top: 1px solid var(--border-glass);">
       <div class="container">
         
@@ -329,11 +482,11 @@
     <!-- Release Hub Pre-Footer CTA -->
     <section style="padding: 100px 0; text-align: center;">
       <div class="container">
-        <div class="glass-panel" style="padding: 70px 32px; max-width: 800px; margin: 0 auto; border-color: rgba(99, 102, 241, 0.4); box-shadow: 0 20px 60px -15px rgba(79, 70, 229, 0.3);">
+        <div class="glass-panel spotlight-card" style="padding: 70px 32px; max-width: 820px; margin: 0 auto; border-color: rgba(99, 102, 241, 0.4); box-shadow: 0 25px 70px -15px rgba(79, 70, 229, 0.35);">
           
-          <img src="assets/branding/momo_master_icon.svg" alt="MomoStack Icon" style="width: 72px; height: 72px; border-radius: 20px; margin-bottom: 24px; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);">
+          <img src="assets/branding/momo_master_icon.svg" alt="MomoStack Icon" style="width: 76px; height: 76px; border-radius: 20px; margin-bottom: 24px; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);">
           
-          <h2 style="font-size: clamp(2rem, 3.5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;" class="text-gradient">
+          <h2 style="font-size: clamp(2.2rem, 3.8vw, 3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;" class="text-gradient">
             Start Stacking Your Knowledge Today.
           </h2>
           
@@ -371,8 +524,8 @@
       
       <div>
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-          <img src="assets/branding/momo_master_icon.svg" alt="Momo Logo" style="width: 32px; height: 32px; border-radius: 8px;">
-          <span style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF;">MomoStack</span>
+          <img src="assets/branding/momo_master_icon.svg" alt="Momo Logo" style="width: 34px; height: 34px; border-radius: 9px;">
+          <span style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF;">MomoStack</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
           The offline-first universal link, OCR, and private notes vault for Android. Engineered with first-principles John Carmack simplicity.
