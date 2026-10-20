@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- **Download distribution.** The Download Hub previously pointed at a non-existent
+  `v1.0.0` release tag, producing 404s, and displayed the SHA-256 of an empty string as
+  a placeholder checksum. The official signed universal APK
+  (`momostack-v1.0.apk`, 20,622,157 bytes) is now published as the
+  [v1.0 GitHub Release](https://github.com/Bilal140202/momostack/releases/tag/v1.0)
+  with a `SHA256SUMS.txt` manifest, and every download link, checksum block, and
+  verification command across the site and documentation references the real artifact
+  (SHA-256 `aa247e8ee60a9daf540dac70f0b1f3386e3a88da980358cbd575e1ec16d60531`).
+- **Outbound link policy.** All visible GitHub page links (nav buttons, footer
+  repository/license/source links, and creator profile buttons) were removed from the
+  site in favor of the creator's canonical site, [ansaribilal.com](https://ansaribilal.com).
+  The MIT license link now points to the Open Source Initiative text.
+
 ### Planned
 
 - Dark/light theme toggle for the landing site (dark remains the default).
@@ -72,5 +87,5 @@ and the complete Obsidian Editorial landing site.
   push-to-deploy workflow removes any need for an external host. Netlify remains a
   drag-and-drop fallback if needs change.
 
-[Unreleased]: https://github.com/Bilal140202/momostack/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/Bilal140202/momostack/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Bilal140202/momostack/compare/v1.0...HEAD
+[1.0.0]: https://github.com/Bilal140202/momostack/releases/tag/v1.0

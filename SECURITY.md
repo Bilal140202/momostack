@@ -68,7 +68,7 @@ the [Download Hub](https://bilal140202.github.io/momostack/download/) and in the
 notes:
 
 ```bash
-sha256sum momostack-v1.0.0.apk
+sha256sum momostack-v1.0.apk
 ```
 
 A mismatch means the file is not the official build — do not install it, and please

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Bilal140202/momostack/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Release-v1.0.0--stable-4F46E5?style=flat-square&logo=android&logoColor=white" alt="Release v1.0.0"></a>
+  <a href="https://github.com/Bilal140202/momostack/releases/tag/v1.0"><img src="https://img.shields.io/badge/Release-v1.0--stable-4F46E5?style=flat-square&logo=android&logoColor=white" alt="Release v1.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10B981?style=flat-square" alt="License MIT"></a>
   <a href="https://bilal140202.github.io/momostack/"><img src="https://img.shields.io/badge/Site-GitHub%20Pages-06B6D4?style=flat-square&logo=github&logoColor=white" alt="GitHub Pages"></a>
   <a href="https://ansaribilal.com"><img src="https://img.shields.io/badge/Crafted%20by-Bilal%20Ansari-F43F5E?style=flat-square" alt="Bilal Ansari"></a>
@@ -209,33 +209,33 @@ system. Every effect degrades gracefully: touch devices skip hover physics, and
 
 | Property | Value |
 |----------|-------|
-| Version | `v1.0.0-production` |
+| Version | `v1.0-stable` |
 | Minimum OS | Android 8.0 (Oreo) |
 | Architectures | `arm64-v8a` · `armeabi-v7a` · `x86_64` (universal) |
-| Package size | ~18.4 MB |
+| Package size | ~19.7 MB |
 | License | MIT |
 
 **SHA-256 checksum:**
 
 ```text
-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+aa247e8ee60a9daf540dac70f0b1f3386e3a88da980358cbd575e1ec16d60531
 ```
 
 **Verify on Linux / macOS:**
 
 ```bash
-sha256sum momostack-v1.0.0.apk        # Linux
-shasum -a 256 momostack-v1.0.0.apk    # macOS
+sha256sum momostack-v1.0.apk        # Linux
+shasum -a 256 momostack-v1.0.apk    # macOS
 ```
 
 **Verify on Windows (PowerShell):**
 
 ```powershell
-Get-FileHash .\momostack-v1.0.0.apk -Algorithm SHA256
+Get-FileHash .\momostack-v1.0.apk -Algorithm SHA256
 ```
 
 Then grab the APK from the [Download Hub](https://bilal140202.github.io/momostack/download/)
-or the [GitHub Releases](https://github.com/Bilal140202/momostack/releases/tag/v1.0.0) page.
+or the [GitHub Releases](https://github.com/Bilal140202/momostack/releases/tag/v1.0) page.
 
 ## Running the Site Locally
 
@@ -297,7 +297,7 @@ momostack/
 
 See [CHANGELOG.md](CHANGELOG.md) for the full history. Current release:
 
-- **v1.0.0** — Production debut: six-pillar feature set, Obsidian Editorial site redesign with
+- **v1.0** — Production debut: six-pillar feature set, Obsidian Editorial site redesign with
   full motion engine, zero-telemetry audit pages, and SHA-256 verifiable distribution.
 
 ## Contributing
