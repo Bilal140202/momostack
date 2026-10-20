@@ -1,0 +1,26 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.jetbrains/
+
+# Logs & temp
+*.log
+npm-debug.log*
+
+# Dependency & build dirs (should never exist in this no-build repo, but guard anyway)
+node_modules/
+dist/
+build/
+.cache/
+
+# Env files
+.env
+.env.*
