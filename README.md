@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Bilal140202/momostack/releases/tag/v1.0"><img src="https://img.shields.io/badge/Release-v1.0--stable-4F46E5?style=flat-square&logo=android&logoColor=white" alt="Release v1.0"></a>
+  <a href="https://github.com/Bilal140202/momostack/releases/tag/v1.0.15"><img src="https://img.shields.io/badge/Release-v1.0.15--stable-4F46E5?style=flat-square&logo=android&logoColor=white" alt="Release v1.0.15"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10B981?style=flat-square" alt="License MIT"></a>
   <a href="https://bilal140202.github.io/momostack/"><img src="https://img.shields.io/badge/Site-GitHub%20Pages-06B6D4?style=flat-square&logo=github&logoColor=white" alt="GitHub Pages"></a>
   <a href="https://ansaribilal.com"><img src="https://img.shields.io/badge/Crafted%20by-Bilal%20Ansari-F43F5E?style=flat-square" alt="Bilal Ansari"></a>
@@ -28,7 +28,7 @@
 - [Design System — Obsidian Editorial](#design-system--obsidian-editorial)
 - [Motion & Interaction Inventory](#motion--interaction-inventory)
 - [Zero-Telemetry Architecture](#zero-telemetry-architecture)
-- [Download & Verification (v1.0)](#download--verification-v10)
+- [Download & Verification (v1.0.15)](#download--verification-v10)
 - [Running the Site Locally](#running-the-site-locally)
 - [Deployment](#deployment)
 - [Repository Structure](#repository-structure)
@@ -99,7 +99,7 @@ static HTML/CSS/JS — no build step, no framework, no tracking scripts.
 ├── docs/
 │   └── index.html              # Operational manual: share-sheet tips, OCR workflow, PDF archival
 ├── download/
-│   └── index.html              # Release hub: v1.0 package, SHA-256 verification, system specs
+│   └── index.html              # Release hub: v1.0.15 package, SHA-256 verification, system specs
 ├── about/
 │   └── index.html              # The Momo story, design philosophy, creator spotlight
 └── assets/
@@ -205,11 +205,11 @@ system. Every effect degrades gracefully: touch devices skip hover physics, and
 5. **No requested dangerous permissions.** MomoStack requests no storage permission, so there
    is no shared-storage surface to leak from.
 
-## Download & Verification (v1.0)
+## Download & Verification (v1.0.15)
 
 | Property | Value |
 |----------|-------|
-| Version | `v1.0-stable` |
+| Version | `v1.0.15-stable` |
 | Minimum OS | Android 8.0 (Oreo) |
 | Architectures | `arm64-v8a` · `armeabi-v7a` · `x86_64` (universal) |
 | Package size | ~19.7 MB |
@@ -218,24 +218,24 @@ system. Every effect degrades gracefully: touch devices skip hover physics, and
 **SHA-256 checksum:**
 
 ```text
-aa247e8ee60a9daf540dac70f0b1f3386e3a88da980358cbd575e1ec16d60531
+a62cb5831dffa9f8e33c52a311dbe2bdf807fdc0d7c0a7ae235533e2d89d4bbc
 ```
 
 **Verify on Linux / macOS:**
 
 ```bash
-sha256sum momostack-v1.0.apk        # Linux
-shasum -a 256 momostack-v1.0.apk    # macOS
+sha256sum momostack-v1.0.15.apk        # Linux
+shasum -a 256 momostack-v1.0.15.apk    # macOS
 ```
 
 **Verify on Windows (PowerShell):**
 
 ```powershell
-Get-FileHash .\momostack-v1.0.apk -Algorithm SHA256
+Get-FileHash .\momostack-v1.0.15.apk -Algorithm SHA256
 ```
 
 Then grab the APK from the [Download Hub](https://bilal140202.github.io/momostack/download/)
-or the [GitHub Releases](https://github.com/Bilal140202/momostack/releases/tag/v1.0) page.
+or the [GitHub Releases](https://github.com/Bilal140202/momostack/releases/tag/v1.0.15) page.
 
 ## Running the Site Locally
 
@@ -297,7 +297,7 @@ momostack/
 
 See [CHANGELOG.md](CHANGELOG.md) for the full history. Current release:
 
-- **v1.0** — Production debut: six-pillar feature set, Obsidian Editorial site redesign with
+- **v1.0.15** — Production debut: six-pillar feature set, Obsidian Editorial site redesign with
   full motion engine, zero-telemetry audit pages, and SHA-256 verifiable distribution.
 
 ## Contributing

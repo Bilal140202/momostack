@@ -1,1 +1,1 @@
-aa247e8ee60a9daf540dac70f0b1f3386e3a88da980358cbd575e1ec16d60531  momostack-v1.0.apk
+a62cb5831dffa9f8e33c52a311dbe2bdf807fdc0d7c0a7ae235533e2d89d4bbc  momostack-v1.0.15.apk

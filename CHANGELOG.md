@@ -31,6 +31,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.15] — 2026-11-02
+
+### Added
+- **Full Note Document Export:** Export and share entire notes in multiple formats (`.txt`, `.doc`, `.md`, `.html`) directly from the Note Editor or Notes list via Android Sharesheet or direct download.
+- **Undo / Redo Support:** Complete state-preserving undo and redo buttons added directly to the note editing toolbar with transaction stack navigation.
+- **Verification Manifest:** Official signed universal release APK `momostack-v1.0.15.apk` (SHA-256 `a62cb5831dffa9f8e33c52a311dbe2bdf807fdc0d7c0a7ae235533e2d89d4bbc`).
+
+---
+
 ## [1.0.0] — 2026-10-20
 
 The production debut of both the MomoStack Android application experience documentation
