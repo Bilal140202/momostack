@@ -321,3 +321,11 @@ Engineered with John Carmack first-principles simplicity by **Bilal Ansari**.
 
 Licensed under the **MIT License** — see [LICENSE](LICENSE) for the full text.
 Use it, fork it, ship it. Attribution appreciated, never enforced.
+
+---
+
+## Project status
+
+**Completed project** — verified in the portfolio audit of **7 November 2026** (README, codebase and project state reviewed).
+
+_Last verified: 7 November 2026_
